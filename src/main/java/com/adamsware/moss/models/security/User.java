@@ -1,4 +1,4 @@
-package com.adamsware.moss.models;
+package com.adamsware.moss.models.security;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

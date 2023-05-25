@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.adamsware.moss.models.User;
+import com.adamsware.moss.models.security.User;
 import com.adamsware.moss.repository.UserRepository;
 
 @Service
