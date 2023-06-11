@@ -1,4 +1,4 @@
-package com.adamsware.moss.models;
+package com.adamsware.moss.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,12 +17,19 @@ public class Session {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
-    private Double price;
+    private String operation;
     private Date date;
-    private Date createDate;
+    private Integer currentSession;
+    private Integer totalSession;
+    private Boolean isCompleted;
+    private Double price;
+    private Double paidAmount;
     private Boolean paymentStatus; //odendi mi? ödenmedi mi??
-    private String paymentInfo;
-
+    private String paymentMethod;
+    private String bank;
+    private Integer creditCardInstallment; //taksit
+    private Date createDate;
+    private String note;
 
     @ManyToOne
     @JoinColumn(name = "customer_id")

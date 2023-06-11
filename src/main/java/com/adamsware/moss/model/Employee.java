@@ -1,5 +1,6 @@
-package com.adamsware.moss.models;
+package com.adamsware.moss.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,22 +14,16 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Customer {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstname;
     private String lastname;
-    private String email;
-    private String gender;
-    private Date birthDate;
-    private String phoneNumber;
-    private String address;
-    private String city;
     private Date createDate;
-    private String notes;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.REMOVE)
+    @JsonIgnore
     private List<Session> sessions;
 }

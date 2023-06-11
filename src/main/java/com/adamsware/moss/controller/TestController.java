@@ -1,4 +1,4 @@
-package com.adamsware.moss.controllers;
+package com.adamsware.moss.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;

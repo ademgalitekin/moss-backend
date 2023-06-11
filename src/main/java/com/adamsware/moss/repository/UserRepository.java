@@ -5,7 +5,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.adamsware.moss.models.security.User;
+import com.adamsware.moss.model.security.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {

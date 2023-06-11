@@ -1,4 +1,4 @@
-package com.adamsware.moss.models.security;
+package com.adamsware.moss.model.security;
 
 public enum ERole {
   ROLE_USER,

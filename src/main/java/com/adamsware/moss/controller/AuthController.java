@@ -1,4 +1,4 @@
-package com.adamsware.moss.controllers;
+package com.adamsware.moss.controller;
 
 import java.util.HashSet;
 import java.util.List;
@@ -22,9 +22,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.adamsware.moss.models.security.ERole;
-import com.adamsware.moss.models.security.Role;
-import com.adamsware.moss.models.security.User;
+import com.adamsware.moss.model.security.ERole;
+import com.adamsware.moss.model.security.Role;
+import com.adamsware.moss.model.security.User;
 import com.adamsware.moss.payload.request.LoginRequest;
 import com.adamsware.moss.payload.request.SignupRequest;
 import com.adamsware.moss.payload.response.JwtResponse;
